@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 20px;
+}
+.button {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #43a907;
+  border-radius: 5px;
+}
+.button--colorless {
+  font-size: 16px;
+  color: #545353;
+  background-color: white;
+}
+.highlighted {
+  color: #43a907;
+}
+.header {
+  padding: 10px 0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.hero {
+  background-image: url("img/hero.jpg");
+  height: 785px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: darkgrey;
+  background-blend-mode: multiply;
+  display: flex;
+  text-align: center;
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+.hero__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 64px;
+  padding-bottom: 10px;
+}
+.hero__separate {
+  font-size: 36px;
+}
+
+.hero__text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.prevent {
+  padding: 100px 0;
+  text-align: center;
+}
+.prevent__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subheading {
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #222222;
+}
+.prevent__text {
+  font-size: 18px;
+  padding-bottom: 50px;
+  color: #393939;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step--active .step__icon-box {
+  background-color: #43a907;
+  border: #43a907;
+}
+.step--active .step__icon {
+  filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(328deg) brightness(103%) contrast(87%);
+}
+.step--active .step__title {
+  color: #43a907;
+}
+
+.step__icon-box {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step__icon {
+  height: 45px;
+}
+.step__title {
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #393939;
+}
+.step__description {
+  padding-top: 10px;
+  text-align: center;
+  color: #646464;
+}
+
+.help {
+  background-color: #222222;
+  padding: 100px 0;
+  color: white;
+}
+.help__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.help__heading {
+  text-transform: uppercase;
+  font-size: 46px;
+  padding-bottom: 15px;
+}
+.help__content {
+  max-width: 70%;
+}
+.help__button {
+  padding: 15px 50px;
+}
+
+.articles {
+  padding: 100px 0;
+}
+.articles__text {
+  font-size: 18px;
+  padding-bottom: 50px;
+  color: #393939;
+  text-align: center;
+}
+.articles__content {
+  display: flex;
+  gap: 25px;
+}
+.article {
+  border: 1px solid #d1d3d1;
+  border-radius: 2px;
+}
+.article__image {
+  max-width: 375px;
+  width: 100%;
+  object-fit: contain;
+}
+.article__body {
+  padding: 30px 20px 25px 20px;
+}
+.article__title {
+  font-size: 22px;
+  line-height: 35px;
+  color: #454444;
+  padding-bottom: 5px;
+}
+.article__date {
+  color: #aeadad;
+  padding-bottom: 15px;
+}
+.article__text {
+  color: #646464;
+  padding-bottom: 15px;
+}
+
+.footer {
+  background-color: #222222;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 640px) {
+  .articles__content {
+    align-items: center;
+    flex-direction: column;
+  }
+  .article {
+    max-width: 500px;
+  }
+  .article__image {
+    max-width: 100%;
+  }
+  .help__wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .help__heading {
+    font-size: 36px;
+  }
+  .steps {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
