@@ -243,6 +243,11 @@ body {
   align-items: center;
   gap: 15px;
 }
+.footer__icon {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(66deg) brightness(107%) contrast(101%);
+}
 
 .products {
   padding-bottom: 50px;
@@ -378,10 +383,6 @@ gap: 20px;
   display: flex; align-items: center;
 }
 
-.footer__icon {
-  width: 25px;
-  filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(66deg) brightness(107%) contrast(101%);
-}
 
 @media(max-width: 640px) {
   .articles__content {
